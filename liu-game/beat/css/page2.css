@@ -1,0 +1,200 @@
+.page2 {
+  background-color: #5f4ac3 ;
+  z-index: 12;
+  overflow: hidden;
+}
+.bg2_cercle {
+  position: absolute;
+  width: 10.7rem;
+  height: 10.7rem;
+  background-color: #4a3a98 ;
+  border-radius: 5.35rem;
+  left: 2.3rem;
+  top: 18.25rem;
+  border: 1px solid #44358b;
+  box-shadow: 0 0 0 2.9rem #5442ad, 0 0 0 2.925rem #44358b, 0 0 0 4.925rem #5946b8, 0 0 0 4.95rem #44358b, 0 0 0 6.95rem #5d49bf, 0 0 0 6.975rem #5946b7;
+}
+#snow {
+  position: absolute;
+  width: 16rem;
+  height: 5.4rem;
+  background: url(../img/snow.png) no-repeat;
+  background-size: cover;
+  bottom: 0;
+  z-index: 2;
+  transform: translateY(25rem);
+}
+.page2 > #gunman {
+  position: absolute;
+  width: 9.125rem;
+  height: 11.15rem;
+  left: 3.3rem;
+  bottom: 3.875rem;
+  background: url(../img/gun_man.png) no-repeat;
+  background-size: cover ;
+  z-index: 9;
+  -webkit-transform: scale(0);
+  opacity: 0 ;
+  transform: scale(0);
+}
+.page2 > #thankyou_world {
+  position: absolute;
+  width: 5.5rem;
+  height: 3.875rem;
+  background: url(../img/thankyou_world.png) no-repeat;
+  background-size: cover ;
+  z-index: 9;
+  left: 1.125rem;
+  bottom: 13.7rem;
+  transform-origin: center bottom;
+  transform: scale(0);
+  opacity: 0 ;
+}
+#bg2_balls {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: url(../img/bg2_balls.png) no-repeat;
+  background-size: cover ;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+#miss_world {
+  position: absolute;
+  width: 11.5rem;
+  height: 3.425rem;
+  background: url(../img/miss_world.png) no-repeat;
+  background-size: cover ;
+  left: 3.1rem;
+  top: 1.25rem;
+  z-index: 9;
+  opacity: 0;
+}
+#tower {
+  position: absolute;
+  width: 1.7rem;
+  height: 2.8rem;
+  left: 3.5rem;
+  bottom: 4.65rem;
+  background: url(../img/tower.png) no-repeat;
+  background-size: cover ;
+  z-index: 1;
+  transform: translateY(25rem);
+  -webkit-transform: translateY(25rem);
+  opacity: 0;
+}
+#rocket_2 {
+  position: absolute;
+  width: 2.575rem;
+  height: 5.4rem;
+  left: 10.5rem;
+  bottom: 4rem;
+  background: url(../img/rocket_page2.png) no-repeat;
+  background-size: cover ;
+  z-index: 1;
+  transform: translateY(25rem);
+  -webkit-transform: translateY(25rem);
+  opacity: 0;
+}
+.gunmanIn {
+  animation: gunmanIn 1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3s ;
+  -webkit-animation: gunmanIn 1s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s ;
+}
+.gunmanOut {
+  animation: gunmanOut 1s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation: gunmanOut 1s ;
+  -webkit-animation-fill-mode: forwards;
+}
+.thankyou_worldIn {
+  animation: thankyou_worldIn 0.8s;
+  animation-fill-mode: forwards;
+  -webkit-animation: thankyou_worldIn 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 4s ;
+  -webkit-animation-delay: 4s ;
+}
+.thankyou_worldOut {
+  animation: thankyou_worldOut 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: thankyou_worldOut 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.towerIn {
+  animation: towerIn 0.5s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: towerIn 0.5s ;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+.rocket_2In {
+  animation: rocket_2In 0.5s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: rocket_2In 0.5s ;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 2.7s ;
+  -webkit-animation-delay: 2.7s ;
+}
+.miss_worldIn {
+  animation: miss_worldIn 2s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: miss_worldIn 2s ;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 5s ;
+  -webkit-animation-delay: 5s ;
+}
+.miss_worldOut {
+  animation: miss_worldOut 1s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: miss_worldOut 1s ;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 1s ;
+  -webkit-animation-delay: 1s ;
+}
+.page2In {
+  animation: page2In 2s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s ;
+  -webkit-animation: page2In 2s linear;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s ;
+}
+.page2Out {
+  animation: page2Out 2s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation: page2Out 2s linear;
+  -webkit-animation-fill-mode: forwards;
+}
+.snowIn {
+  animation: snowIn 1s ;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  -webkit-animation: snowIn 1s ;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+}
+.snowOut {
+  animation: snowOut 1s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: snowOut 1s ;
+  -webkit-animation-fill-mode: forwards;
+}
+.bg2_ballsIn {
+  animation: bg2_ballsIn 1s ;
+  animation-fill-mode: forwards;
+  -webkit-animation: bg2_ballsIn 1s ;
+  -webkit-animation-fill-mode: forwards;
+}
+.bg2_ballsOut {
+  animation: bg2_ballsOut 1s ;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  -webkit-animation: bg2_ballsOut 1s ;
+  -webkit-animation-fill-mode: forwards;
+}

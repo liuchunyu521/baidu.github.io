@@ -1,0 +1,73 @@
+@r:40rem;
+body{
+    overflow: hidden;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.arrive{
+    opacity: 0;
+    position: absolute;
+    width: 90/@r;
+    height: 65/@r;
+    background: url(../img/up_ico.png) no-repeat;
+    background-size: 90/@r 65/@r;
+    left: 275/@r;
+    bottom:40/@r ;
+    animation: arrive 1.5s infinite;
+    -webkit-animation: arrive 1.5s infinite;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    z-index: 9999;
+}
+#music,#music2{
+    position: absolute;
+    width: 50/@r;
+    height: 47/@r;
+    background-size:cover ;
+    bottom: 16/@r;
+    right: 20/@r;
+    z-index: 9999;
+}
+//音乐播放
+.play{
+    background: url(../img/musicplay.png) no-repeat;
+    animation:music 5s linear infinite;
+    -webkit-animation:music 5s linear infinite;
+}
+.stop{
+     background: url(../img/musicstop.png) no-repeat;
+     animation: none;
+}
+.jindu_box{
+    position: absolute;
+    width: 460/@r;
+    height: 26/@r;
+    background-color:#243367 ;
+    border: 3/@r solid #4091dc;
+    bottom: 120/@r;
+    left: 90/@r;
+    border-radius: 13/@r;
+    overflow: hidden;
+    z-index:99;
+}
+.jindu_box #inner_jindu{
+    width: 0;
+    height: 100%;
+    background-color:#4091dc;
+}
+#worl_inner_jindu{
+    height: 30/@r;
+    font-size:20/@r ;
+//  background: red;
+    z-index:999;
+    position:absolute;
+    width:100%;
+    color:white;
+    letter-spacing:10/@r;
+    text-align:center;
+    font-weight:bold;
+    
+}

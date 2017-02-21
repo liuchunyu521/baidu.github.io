@@ -1,0 +1,87 @@
+.page1 {
+  width: 100%;
+  height: 100%;
+  background-color: #2d4081 ;
+  z-index: 13;
+  overflow: hidden;
+}
+.page1_cercle {
+  width: 10.75rem;
+  height: 10.75rem;
+  position: absolute;
+  background-color: #233264;
+  left: 2.625rem;
+  top: 8.75rem;
+  border-radius: 5.4rem;
+  border: 1px solid #1c2850;
+  box-shadow: 0 0 0 2.825rem #283972, 0 0 0 2.85rem #24366a, 0 0 0 4.825rem #2a3d79, 0 0 0 4.85rem #24366a, 0 0 0 6.35rem #2c3f7e;
+}
+.srars {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../img/stars.png) no-repeat;
+  background-size: cover;
+}
+#rocket {
+  opacity: 1;
+  width: 4.1rem;
+  height: 4.825rem;
+  background: url(../img/rocket.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 3.85rem;
+  top: 8.05rem;
+}
+#thankyou {
+  position: absolute;
+  width: 9.95rem;
+  height: 7.375rem;
+  background: url(../img/thankyou.png) no-repeat;
+  background-size: cover ;
+  top: 9.85rem;
+  left: 3.55rem;
+  opacity: 0;
+}
+.rocketIn {
+  animation: rocketIn 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: rocketIn 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.rocketOut {
+  animation: rocketOut 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: rocketOut 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.thankyouIn {
+  animation: thankyouIn 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: thankyouIn 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 1s ;
+  -webkit-animation-delay: 1s;
+}
+.thankyouOut {
+  animation: thankyouOut 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: thankyouOut 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 1s ;
+  -webkit-animation-delay: 1s;
+}
+.page1In {
+  animation: page1In 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: page1In 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.page1Out {
+  animation: page1Out 1s;
+  animation-fill-mode: forwards;
+  -webkit-animation: page1Out 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}

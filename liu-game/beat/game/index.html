@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>game</title>
+		<link rel="stylesheet" href="css/game.css" type="text/css" />
+		<link rel="stylesheet" href="css/reset.css" type="text/css" />
+		<script>
+//		设置端口适配
+		var scale = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=no" />');
+        (function(){
+            var html = document.getElementsByTagName("html")[0];
+            html.style.fontSize = html.clientWidth/16+"px";
+        })();
+        </script>
+	</head>
+	<body>
+		<!--游戏开始时候的弹出框-->
+		<section id="pop">
+			<div class="play_way">
+				当小怪物出现时，瞄准它，按下小拇指，将它消灭，
+			</div>
+			<div id="begin_game_buttom">
+				开始游戏
+			</div>
+		</section>
+		
+		<section id="pop2">
+			<div class="play_way2">
+				时间到！<span id="ping_jia">不错嘛！</span>少年~<br/> 
+				你闯入了第 <span id="ending_guan_shu">10</span> 关<br />
+				总共消灭了  <span id="ending_num_monsters">60</span> 只小怪物
+			</div>
+			<div class="begin_game_buttom bac_to_begin" id="bac_to_begin">
+				回到开始页面
+			</div>
+			<div class="begin_game_buttom another" id="another">
+				再来一局
+			</div>
+		</section>
+		
+		<section class="page page3" id="page_game">
+			<canvas id="can"></canvas>
+			<div class="bg3_cercle"></div>
+		</section>
+		
+		<!--进度条-->
+		<div class="jindu_box" id="jindu_box">
+				<div id="worl_inner_jindu">加载中...</div>
+				<div id="inner_jindu" style="width: 50%;"></div>
+		</div>
+		
+		<footer class="foot">
+			<span class="monster_ico"></span>
+			<span class="num_monster">×</span>
+			<span class="num_monster_2">0</span>
+			<span class="rest_time_ico"></span>
+			<span class="num_rest_time"></span>
+			<span class="num_rest_times">秒</span>
+			<span class="num_customs">第1关</span>
+			<div id="music" class="play">
+				<audio id="musicbox" loop="loop" src="music/S5.mp3" autoplay="true"></audio>
+			</div>
+		</footer>
+		<script src="js_game/jc.js"></script>
+		<script src="js_game/tool.js"></script>
+		<script src="js_game/game.js"></script>
+	</body>
+</html>

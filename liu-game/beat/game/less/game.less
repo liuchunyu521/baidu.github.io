@@ -1,0 +1,353 @@
+@r:40rem;
+body{
+    background-color:#2c3f7e;
+    overflow: hidden;
+}
+.page3{
+  background-color:#2d4081 ;
+  z-index: 1;
+  overflow: hidden;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+}
+.bg3_cercle {
+  width: 10.75rem;
+  height: 10.75rem;
+  position: absolute;
+  background-color: #233264;
+  left: 2.625rem;
+  bottom: 7rem;
+  border-radius: 5.4rem;
+  border: 1px solid #1c2850;
+  box-shadow: 0 0 0 2.825rem #283972, 0 0 0 2.85rem #24366a, 0 0 0 4.825rem #2a3d79, 0 0 0 4.85rem #24366a, 0 0 0 6.35rem #2c3f7e;
+}
+#music,#music2{
+    position: absolute;
+    width: 50/@r;
+    height: 47/@r;
+    background-size:cover ;
+    bottom: 16/@r;
+    right: 20/@r;
+    z-index: 9999;
+}
+//音乐播放
+.play{
+    background: url(../img/musicplay.png) no-repeat;
+    animation:music 5s linear infinite;
+    -webkit-animation:music 5s linear infinite;
+}
+.stop{
+     background: url(../img/musicstop.png) no-repeat;
+     animation: none;
+     -webkit-animation: none;
+}
+@keyframes music{
+     0%{
+    transform: rotate(0deg);
+        }
+    100%{
+     transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes music{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+     transform: rotate(360deg);
+  }
+}
+.foot{
+    width: 100%;
+    height: 73/@r;
+    background-color: #161f3e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+}
+.monster_ico{
+    width: 60/@r;
+    height: 56/@r;
+    background: url(../img_game/manster4.png) no-repeat;
+    background-size:cover ;
+    position: absolute;
+    left: 22/@r;
+    top: 17/@r;
+}
+.num_monster{
+    width: 100/@r;
+    height: 24/@r;
+    color: #55b9f8;
+    font-size: 24/@r;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    left: 90/@r;
+    position: absolute;
+    top: 34/@r;
+}
+.num_monster_2{
+     width: 100/@r;
+    height: 24/@r;
+    color: #55b9f8;
+    font-size: 24/@r;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    left: 108/@r;
+    position: absolute;
+    top: 34/@r;
+}
+.rest_time_ico{
+    width: 40/@r;
+    height: 45/@r;
+    background: url(../img_game/time_ico.png) no-repeat;
+    background-size:cover ;
+    position: absolute;
+    top: 16/@r;
+    left: 180/@r;
+}
+.num_rest_time,.num_rest_times,.num_customs{
+    width: 36/@r;
+    height: 40/@r;
+    background-size:cover ;
+    position: absolute;
+    left:250/@r;
+    top: 30/@r;
+    color: #ffe400;
+    font-size: 28/@r;
+    font-weight: bold;
+    font-family:"微软雅黑" ;
+}
+.num_rest_times{
+    left: 300/@r;
+}
+.num_customs{
+     width: 100/@r;
+    left: 360/@r;
+    color:#d3da56;
+    letter-spacing: 3/@r;
+}
+#can{
+    z-index: 98;
+    position: absolute;
+}
+.shake{
+    animation:no_touch 0.1s linear;
+    -webkit-animation:no_touch 0.1s linear;
+}
+@keyframes no_touch{
+     0%{
+        transform:translateX(-40px);
+        
+    }
+    10%{
+         transform:translateY(-40px);
+    }
+    20%{
+        transform: translateY(30px);
+    }
+    30%{
+        transform: translateX(40px);
+    }
+    40%{
+         transform: translateX(-8px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    60%{
+         transform: translateY(20px);
+    }
+    70%{
+        transform: translateY(30px);
+    }
+    80%{
+        transform: translateX(40px);
+    }
+    90%{
+         transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: translateY(0px);
+        
+    }
+    
+}
+@-webkit-keyframes no_touch{
+    0%{
+        -webkit-transform:translateX(-40px);
+        
+    }
+    10%{
+         -webkit-transform:translateY(-40px);
+    }
+    20%{
+        -webkit-transform: translateY(30px);
+    }
+    30%{
+        -webkit-transform: translateX(40px);
+    }
+    40%{
+         -webkit-transform: translateX(-8px);
+    }
+    50%{
+        -webkit-transform: translateY(-20px);
+    }
+    60%{
+         -webkit-transform: translateY(20px);
+    }
+    70%{
+        -webkit-transform: translateY(30px);
+    }
+    80%{
+        -webkit-transform: translateX(40px);
+    }
+    90%{
+         -webkit-transform: translateX(-20px);
+    }
+    100%{
+        -webkit-transform: translateX(0px);
+        -webkit-transform: translateY(0px);
+        
+    }
+}
+#pop{
+    width: 420/@r;
+    height: 478/@r;
+    background-image:url(../img_game/begin_game.png);
+    background-size:cover;
+    position:absolute;
+    z-index:100;
+    left:108/@r;
+    top:-480/@r;
+    transition:1s;
+    transform:translateY(0);
+    -webkit-transform:translateY(0);
+}
+#pop2{
+    width: 420/@r;
+    height: 540/@r;
+//  background-color:#ec636d;
+    background-image:url(../img_game/begin_game.png);
+    background-size:cover;
+    position:absolute;
+    z-index:100;
+    left:108/@r;
+    top:-540/@r;
+    transition:1s;
+    transform:translateY(0);
+    -webkit-transform:translateY(0);
+}
+#begin_game_buttom,.begin_game_buttom{
+    width: 262/@r;
+    height: 63/@r;
+    border:2/@r solid #c5212d;
+    position:absolute;
+    background-color:white;
+    left:78/@r;
+    bottom:60/@r;
+    color:#ec636d;
+    font-size:30/@r;
+    line-height:63/@r;
+    text-align:center;
+    border-radius: 10/@r;
+    font-weight:bold;
+}
+.play_way{
+    width: 334/@r;
+    height: 114/@r;
+    font-size:26/@r;
+    color:#fef8c2;
+    position:absolute;
+    left:58/@r;
+    bottom:140/@r;
+    line-height:60/@r;
+    text-align:center;
+}
+.play_way2{
+    width: 334/@r;
+    height: 3.1rem;
+    font-size:26/@r;
+    color:#fef8c2;
+    position:absolute;
+    left:58/@r;
+    top:240/@r;
+    line-height:40/@r;
+    text-align:center;
+}
+@keyframes beginGame{
+    from{
+        transform: scale(1);
+    }
+    to{
+         transform: scale(1.5);
+         opacity: 0;
+    }
+}
+@-webkit-keyframes beginGame{
+    from{
+        transform: scale(1);
+    }
+    to{
+         transform: scale(1.5);
+         opacity: 0;
+    }
+}
+@keyframes removeBeginGame{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes removeBeginGame{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.another{
+    bottom:0.5rem;
+}
+.bac_to_begin{
+    bottom:2.5rem;
+}
+.jindu_box{
+    position: absolute;
+    width: 460/@r;
+    height: 26/@r;
+    background-color:#243367 ;
+    border: 3/@r solid #4091dc;
+    bottom: 120/@r;
+    left: 90/@r;
+    border-radius: 13/@r;
+    overflow: hidden;
+    z-index:99;
+}
+.jindu_box #inner_jindu{
+    width: 0;
+    height: 100%;
+    background-color:#4091dc;
+}
+#worl_inner_jindu{
+    height: 30/@r;
+    font-size:20/@r ;
+//  background: red;
+    z-index:999;
+    position:absolute;
+    width:100%;
+    color:white;
+    letter-spacing:10/@r;
+    text-align:center;
+    font-weight:bold;
+    
+}
+

@@ -1,0 +1,98 @@
+@r:40rem;
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color:#2d4081 ;
+    z-index: 13;
+//  display: none;
+    overflow: hidden;
+    
+}
+.page1_cercle{
+    width: 430/@r;
+    height: 430/@r;
+    position: absolute;
+    background-color: #233264;
+    left: 105/@r;
+    top: 350/@r;
+    border-radius: 216/@r;
+    border: 1px solid #1c2850;
+    box-shadow: 0 0 0 113/@r #283972,0 0 0 114/@r #24366a,0 0 0 193/@r #2a3d79,0 0 0 194/@r #24366a,0 0 0 254/@r #2c3f7e;
+}
+.srars{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/stars.png) no-repeat;
+    background-size:cover;
+}
+#rocket{
+    opacity: 1;
+    width: 164/@r;
+    height: 193/@r;
+    background: url(../img/rocket.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 154/@r;
+    top: 322/@r;
+}
+#thankyou{
+    opacity: 0;
+    position: absolute;
+    width: 398/@r;
+    height: 295/@r;
+    background: url(../img/thankyou.png) no-repeat;
+    background-size:cover ;
+    top: 394/@r;
+    left: 142/@r;
+    opacity: 0;
+//  transform: translateY(7.5rem);
+}
+//火箭进场
+.rocketIn{
+    animation: rocketIn 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:rocketIn 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+//火箭出场
+.rocketOut{
+    animation: rocketOut 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:rocketOut 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+//感恩进场
+.thankyouIn{
+    animation: thankyouIn 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:thankyouIn 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay:1s ;
+    -webkit-animation-delay: 1s;
+}
+//感恩出场
+.thankyouOut{
+    animation: thankyouOut 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:thankyouOut 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay:1s ;
+    -webkit-animation-delay: 1s;
+}
+//page1入场
+.page1In{
+    animation: page1In 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:page1In 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+//page1出场
+.page1Out{
+    animation: page1Out 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation:page1Out 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}

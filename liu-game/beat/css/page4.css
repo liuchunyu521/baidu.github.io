@@ -1,0 +1,120 @@
+.page4 {
+  position: absolute;
+  background-color: #243367 ;
+  z-index: 9;
+  opacity: 0;
+  overflow: hidden;
+}
+.bg4_cercle {
+  top: 9rem;
+  box-shadow: 0 0 0 2.25rem #202d5b, 0 0 0 4rem #223061, 0 0 0 5.25rem #233265;
+}
+.rocket_4 {
+  position: absolute;
+  width: 9.25rem;
+  height: 11.4rem;
+  left: 3.5rem;
+  top: 7.5rem;
+  z-index: 9;
+  background: url(../img/rocket_4.png) no-repeat;
+  background-size: cover ;
+}
+#intry {
+  box-sizing: border-box;
+  width: 5.85rem;
+  height: 1.625rem;
+  border: 0.05rem solid #353b50;
+  position: absolute;
+  left: 1.675rem;
+  bottom: 1.5rem;
+  background-color: #fd5a71 ;
+  font-size: 0.75rem;
+  font-weight: bold ;
+  font-family: "微软雅黑";
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  color: white;
+}
+.page4In {
+  animation: page4In 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  z-index: 9998;
+  -webkit-animation: page4In 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.4s;
+}
+.page4Out {
+  z-index: 9;
+}
+@keyframes page4In {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes page4In {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.beginGame {
+  animation: beginGame 0.5s;
+  -webkit-animation: beginGame 0.5s;
+}
+.removeBeginGame {
+  animation: removeBeginGame 0.5s;
+  -webkit-animation: removeBeginGame 0.5s;
+}
+@keyframes beginGame {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes beginGame {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes removeBeginGame {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes removeBeginGame {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.discription {
+  position: absolute;
+  width: 10.75rem;
+  height: 3.75rem;
+  top: 2.5rem;
+  left: 2.75rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffe44c;
+  font-weight: bold;
+  word-spacing: 0.05rem;
+}

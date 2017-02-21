@@ -1,0 +1,17 @@
+body{
+	margin: 0;
+	overflow: hidden;
+}
+ul,li,dl,dt,ol{
+	padding: 0;	
+	margin: 0;
+}
+p{
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}

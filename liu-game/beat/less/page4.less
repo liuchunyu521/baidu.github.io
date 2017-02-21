@@ -1,0 +1,122 @@
+@r:40rem;
+.page4{
+    position: absolute;
+    background-color:#243367 ;
+    z-index: 9;
+    opacity: 0;
+    overflow: hidden;
+//  display: none;
+}
+.bg4_cercle{
+    top: 360/@r;
+    box-shadow: 0 0 0 90/@r #202d5b,0 0 0 160/@r #223061,0 0 0 210/@r #233265;
+}
+.rocket_4{
+    position: absolute;
+    width: 370/@r;
+    height: 456/@r;
+    left: 3.5rem;
+    top: 7.5rem;
+    z-index: 9;
+    background: url(../img/rocket_4.png) no-repeat;
+    background-size:cover ;
+}
+#intry{
+   box-sizing: border-box;
+   width: 234/@r;
+   height: 65/@r;
+   border: 2/@r solid #353b50;
+   position: absolute;
+   left: 67/@r;
+   bottom: 60/@r;
+   background-color:#fd5a71 ;
+   font-size: 30/@r;
+   font-weight:bold ;
+   font-family:"微软雅黑" ;
+   line-height: 60/@r;
+   text-align: center;
+   border-radius: 8/@r;
+   color: white;
+}
+.page4In{
+    animation: page4In 2s;
+    animation-fill-mode: forwards;
+    animation-delay:0.4s;
+    z-index: 9998;
+    -webkit-animation: page4In 2s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay:0.4s;
+}
+.page4Out{
+    z-index: 9;
+}
+@keyframes page4In{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes page4In{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.beginGame{
+    animation: beginGame 0.5s;
+    -webkit-animation: beginGame 0.5s;
+}
+.removeBeginGame{
+    animation: removeBeginGame 0.5s;
+    -webkit-animation: removeBeginGame 0.5s;
+}
+@keyframes beginGame{
+    from{
+        transform: scale(1);
+    }
+    to{
+         transform: scale(2);
+         opacity: 0;
+    }
+}
+@-webkit-keyframes beginGame{
+    from{
+        transform: scale(1);
+    }
+    to{
+         transform: scale(2);
+         opacity: 0;
+    }
+}
+@keyframes removeBeginGame{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes removeBeginGame{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.discription{
+    position:absolute;
+    width: 430/@r;
+    height: 150/@r;
+    top:100/@r;
+    left:110/@r;
+    text-align: center;
+    font-size:40/@r;
+    color:#ffe44c;
+    font-weight:bold;
+    word-spacing: 2/@r;
+}

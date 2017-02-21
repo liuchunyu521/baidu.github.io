@@ -1,0 +1,294 @@
+@r:40rem;
+.page3{
+  background-color:#2d4081 ;
+  z-index: 10;
+  opacity: 0;
+  overflow: hidden;
+//display: none;
+}
+
+.bg3_cercle{
+    width: 430/@r;
+    height: 430/@r;
+    position: absolute;
+    background-color: #233264;
+    left: 105/@r;
+    bottom: 0/@r;
+    border-radius: 216/@r;
+    border: 1px solid #1c2850;
+    box-shadow: 0 0 0 113/@r #283972,0 0 0 114/@r #24366a,0 0 0 193/@r #2a3d79,0 0 0 194/@r #24366a,0 0 0 254/@r #2c3f7e;
+}
+//那些年字
+#na_xie_nian{
+    width: 332/@r;
+    height: 104/@r;
+    position: absolute;
+    left: 3.5rem;
+    top: 2.625rem;
+    background: url(../img/thatyears.png);
+    background-size:cover ;
+    opacity: 0;
+}
+#mo_shang_hua_kai{
+    width: 164/@r;
+    height: 116/@r;
+    background: url(../img/mo_shang_hua_kai.png) no-repeat;
+    background-size:cover;
+    left: 46/@r;
+    bottom: 352/@r;
+    position: absolute;
+    opacity: 0;
+    
+}
+#snow_3{
+    position: absolute;
+    width: 640/@r;
+    height: 216/@r;
+    background: url(../img/snow.png) no-repeat;
+    background-size:cover;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    bottom: -20/@r;
+    opacity: 0;
+}
+#girl1{
+    width: 94/@r;
+    height: 168/@r;
+    background: url(../img/girl1.png);
+    background-size:cover ;
+    position: absolute;
+    left: 50/@r;
+    bottom: 142/@r;
+    z-index: 9;
+    opacity: 0;
+}
+#oldman{
+    width: 73/@r;
+    height: 171/@r;
+    background:url(../img/old_man1.png) ;
+    background-size:cover ;
+    position: absolute;
+    left: 174/@r;
+    bottom: 166/@r;
+    z-index: 9;
+    opacity: 0;
+}
+#man1{
+    width: 70/@r;
+    height: 178/@r;
+    position: absolute;
+    background: url(../img/man1.png);
+    background-size:cover;
+    left: 284/@r;
+    bottom: 175/@r;
+    z-index: 9;
+    opacity: 0;
+}
+#girl2{
+    width: 80/@r;
+    height: 158/@r;
+    position: absolute;
+    background: url(../img/girl2.png);
+    background-size:cover ;
+    left: 395/@r;
+    bottom: 167/@r;
+    z-index: 9;
+    opacity: 0;
+}
+#man2{
+    width: 90/@r;
+    height: 160/@r;
+    position: absolute;
+    background: url(../img/man2.png);
+    background-size:cover ;
+    left: 498/@r;
+    bottom: 142/@r;
+    z-index: 9;
+    opacity: 0;
+}
+#rocket_3{
+    width: 118/@r;
+    height: 274/@r;
+    position: absolute;
+    background: url(../img/rocket_3_fly.png) no-repeat;
+    background-size:cover ;
+    left: 260/@r;
+    bottom: 400/@r;
+    z-index: 2;
+    opacity: 0;
+    
+}
+#rotket_bottom{
+    width: 346/@r;
+    height: 316/@r;
+    background: url(../img/rocket_bottom.png) no-repeat;
+    background-size:cover ;
+    position: absolute;
+    left: 160/@r;
+    bottom: 140/@r;
+    z-index: 1;
+    opacity: 0;
+}
+#bottom_dots{
+    width: 596/@r;
+    height: 443/@r;
+    background: url(../img/bottom_dots.png) no-repeat;
+    background-size:cover;
+    position: absolute;
+    left: 14/@r;
+    bottom: 0;
+    z-index: 0;
+}
+.girl1In{
+    animation: girl1In 0.4s linear;
+    animation-fill-mode: forwards;
+    transform-origin: 50% bottom;
+    animation-delay:1.5s ;
+    
+    -webkit-animation: girl1In 0.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform-origin: 50% bottom;
+    -webkit-animation-delay:1.5s ;
+    
+}
+
+.oldmanIn{
+     -webkit-animation: oldmanIn 0.4s linear;
+     -webkit-animation-fill-mode: forwards;
+     -webkit-animation-delay: 1.9s;
+     -webkit-transform-origin: 50% 190/@r;
+    
+    animation: oldmanIn 0.4s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1.9s;
+    transform-origin: 50% 190/@r;
+}
+.man1In{
+    -webkit-animation: man1In 0.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 2.3s;
+    -webkit-transform-origin: 50% 190/@r;
+    
+    animation: man1In 0.4s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+    transform-origin: 50% 190/@r;
+}
+.girl2In{
+    animation: girl2In 0.4s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2.7s;
+    transform-origin: 50% bottom;
+    
+    -webkit-animation: girl2In 0.4s linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-delay: 2.7s;
+    -webkit-transform-origin: 50% bottom;
+    
+}
+.man2In{
+    animation: man2In 0.4s linear;
+    animation-fill-mode: forwards ;
+    animation-delay: 3.1s;
+    transform-origin: 0% bottom;
+    
+    -webkit-animation: man2In 0.4s linear;
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation-delay: 3.1s;
+    -webkit-transform-origin: 0% bottom;
+}
+.rocket_3In{
+    animation: rocket_3In 1.4s;
+    animation-fill-mode: forwards ;
+    animation-delay: 3s;
+    
+    -webkit-animation: rocket_3In 1.4s;
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation-delay: 3s;
+}
+.rocket_3Out{
+    animation: rocket_3Out 1.4s;
+    animation-fill-mode: forwards ;
+    
+    -webkit-animation: rocket_3Out 1.4s;
+    -webkit-animation-fill-mode: forwards ;
+}
+.rotket_bottomIn{
+    animation: rotket_bottomIn 1.4s;
+    animation-fill-mode: forwards ;
+    animation-delay: 3s;
+    
+    -webkit-animation: rotket_bottomIn 1.4s;
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation-delay: 3s;
+}
+.rotket_bottomOut{
+     -webkit-animation: rotket_bottomOut 1.4s;
+     -webkit-animation-fill-mode: forwards ;
+    
+    animation: rotket_bottomOut 1.4s;
+    animation-fill-mode: forwards ;
+}
+.mo_shang_hua_kaiIn{
+    animation: rotket_bottomIn 1.4s;
+    animation-fill-mode: forwards ;
+    animation-delay: 4s;
+    transform-origin: 50% bottom;
+    
+    -webkit-animation: rotket_bottomIn 1.4s;
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation-delay: 4s;
+    -webkit-transform-origin: 50% bottom;
+}
+.mo_shang_hua_kaiOut{
+    animation: rotket_bottomOut 1.4s;
+    animation-fill-mode: forwards ;
+    
+    -webkit-animation: rotket_bottomOut 1.4s;
+    -webkit-animation-fill-mode: forwards ;
+}
+.na_xie_nianIn{
+    -webkit-animation: na_xie_nianIn 1.4s linear;
+    -webkit-animation-fill-mode: forwards ;
+    -webkit-animation-delay: 3.9s;
+    
+    animation: na_xie_nianIn 1.4s linear;
+    animation-fill-mode: forwards ;
+    animation-delay: 3.9s;
+}
+.girl1Out,.oldmanOut,.man1Out,.girl2Out,.man2Out,.rotket_bottomOut{
+    -webkit-animation: allOut 10ms linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation: allOut 10ms linear;
+    animation-fill-mode: forwards;
+}
+.page3In{
+    animation: page3In 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5;
+    -webkit-animation: page3In 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+.page3Out{
+    -webkit-animation: page3Out 2s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: page3Out 2s linear;
+    animation-fill-mode: forwards;
+    z-index: 999;
+}
+.snow_3In{
+    -webkit-animation: snow_3In 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation: snow_3In 1s linear;
+    animation-fill-mode: forwards;
+}
+.snow_3Out{
+    -webkit-animation: snow_3Out 1s linear;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation: snow_3Out 1s linear;
+    animation-fill-mode: forwards;
+}

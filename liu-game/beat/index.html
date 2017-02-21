@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>手机打怪物</title>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="css/animation.css" rel="stylesheet" type="text/css" />
+		<link href="css/conment.css" rel="stylesheet" type="text/css" />
+		<link href="css/page3_animation.css" rel="stylesheet" type="text/css"/>
+		<link href="css/page1.css" rel="stylesheet" type="text/css" />
+		<link href="css/page2.css" rel="stylesheet" type="text/css" />
+		<link href="css/page3.css" rel="stylesheet" type="text/css" />
+		<link href="css/page4.css" rel="stylesheet" type="text/css" />
+		<script>
+//		设置端口适配
+		var scale = 1/window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=no" />');
+        (function(){
+            var html = document.getElementsByTagName("html")[0];
+            html.style.fontSize = html.clientWidth/16+"px";
+        })();
+        </script>
+	</head>
+	<body>
+	<script>
+//	初始化页面高度
+		document.body.style.height = document.documentElement.clientHeight + "px";
+	</script>
+	<!--第一版画面-->
+		<section class="page1 page" id="page1">
+			<!--中间圆圈-->
+			<div class="page1_cercle">
+				
+			</div>
+			<!--大星星，小星星背景图片-->
+			<div class="srars"></div>
+			<!--火箭div-->
+			<div id="rocket"></div>
+			<div id="thankyou"></div>
+			
+			
+			
+		</section>
+		
+	<!--第二版画面-->
+		<section class="page2 page" id="page2">
+
+			<div id="bg2_balls"></div>
+			<div id="tower"></div>
+			<div id="rocket_2"></div>
+			<div id="miss_world"></div>
+			<div id="thankyou_world" ></div>
+			<div id="gunman"></div>
+			<div class="bg2_cercle"></div>
+			<div id="snow"></div>
+			
+		</section>
+		
+		<!--第三屏幕画面-->
+		<section class="page3 page" id="page3">
+			<div class="bg3_cercle">
+				
+			</div>
+			<div id="na_xie_nian" ></div>
+			<div id="mo_shang_hua_kai" ></div>
+			<div id="snow_3"></div>
+			<div id="girl1" ></div>
+			<div id="oldman" ></div>
+			<div id="man1" ></div>
+			<div id="girl2" ></div>
+			<div id="man2" ></div>
+			<div id="rocket_3" ></div>
+			<div id="rotket_bottom" ></div>
+			<div id="bottom_dots"></div>
+		</section>
+		<!--第四屏画面-->
+		<section class="page4 page" id="page4">
+			<div class="bg3_cercle bg4_cercle">
+				
+			</div>
+			<div class="rocket_4">
+				<div id="intry">进入游戏</div>
+			</div>
+			<div class="discription">
+				点击进入游戏<br />
+				enjoy我的作品O(∩_∩)O~
+			</div>
+		</section>
+		<!--进度条-->
+		<div class="jindu_box">
+				<div id="worl_inner_jindu">加载中...</div>
+				<div id="inner_jindu"></div>
+			</div>
+		<!--底部向上滑提示按键-->
+		<div class="arrive"></div>
+		<!--音乐播放图标-->
+		<div id="music" class="play">
+			<audio id="musicbox" src="music/S5.mp3" autoplay="true"></audio>
+		</div>
+		
+		<script src="js/tool.js"></script>
+		<script src="js/wiperFunctions.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

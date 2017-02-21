@@ -1,0 +1,435 @@
+/*火箭入场*/
+@r:40rem;
+@keyframes rocketIn {
+  from {
+    transform: translateX(-20rem) translateY(20rem);
+    
+  }
+  to {
+    transform: translateX(0rem) translateY(0rem);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rocketIn {
+  from {
+    -webkit-transform: translateX(-20rem) translateY(20rem);
+  }
+  to {
+    -webkit-transform: translateX(0rem) translateY(0rem);
+    opacity: 1;
+  }
+}
+/*火箭出场*/
+@keyframes rocketOut {
+  from {
+    transform: translateX(0rem) translateY(0rem);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(10rem) translateY(-10rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rocketOut {
+   from {
+    -webkit-transform: translateX(0rem) translateY(0rem);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateX(10rem) translateY(-10rem);
+    opacity: 0;
+  }
+}
+
+
+/*感恩入场*/
+@keyframes thankyouIn {
+  from {
+    transform: translateY(7.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes thankyouIn {
+  from {
+    -webkit-transform: translateY(7.5rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+/*感恩出场*/
+@keyframes thankyouOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(7.5rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes thankyouOut {
+  from {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(7.5rem);
+    opacity: 0;
+  }
+}
+/*底部箭头入场*/
+@keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@-webkit-keyframes arrive {
+  0% {
+    -webkit-transform: translateY(2.5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+//底部三角滑动关键帧
+@keyframes arrive{
+    0%{
+        opacity: 0;
+        transform: translateY(100/@r);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0/@r);
+    }
+}
+@-webkit-keyframes arrive {
+  0%{
+    -webkit-transform: translateY(100/@r);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform:translateY(0/@r);
+    opacity: 1;
+  }
+}
+/*音乐图标关键帧*/
+@keyframes music{
+     0%{
+    transform: rotate(0deg);
+        }
+    100%{
+     transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes music{
+  0%{
+    -webkit-transform: rotate(0deg);
+  }
+  100%{
+     -webkit-transform: rotate(360deg);
+  }
+}
+//第一屏幕入场
+@keyframes page1In{
+     0%{
+         opacity: 0;
+        }
+    100%{
+     opacity: 1;
+    }
+}
+@-webkit-keyframes page1In{
+     0%{
+         opacity: 0;
+        }
+    100%{
+     opacity: 1;
+    }
+}
+@keyframes page1Out{
+     0%{
+         opacity: 1;
+        }
+    100%{
+     opacity: 0;
+    }
+}
+@-webkit-keyframes page1Out{
+     0%{
+         opacity: 1;
+        }
+    100%{
+     opacity: 0;
+    }
+}
+//page2的动画
+//小人入场
+@-webkit-keyframes gunmanIn{
+  0%{
+     opacity:0 ;
+    -webkit-transform:scale(0);
+  }
+  100%{
+      opacity:1 ;
+     -webkit-transform: scale(1);
+  }
+}
+@keyframes gunmanIn{
+     0%{
+      opacity:0 ;
+    transform:scale(0);
+  }
+  100%{
+      opacity:1 ;
+     transform: scale(1);
+  }
+}
+//小人出场
+@-webkit-keyframes gunmanOut{
+    0%{
+         -webkit-transform: scale(1);
+    }
+    100%{
+        opacity:0 ;
+        -webkit-transform: scale(2);
+    }
+}
+@keyframes gunmanOut{
+    0%{
+         transform: scale(1);
+    }
+    100%{
+        opacity:0 ;
+        transform: scale(2);
+    }
+}
+//白色字出场
+@-webkit-keyframes thankyou_worldIn{
+    0%{
+        -webkit-transform: scale(0);
+        opacity:0 ;
+    }
+    100%{
+        opacity:1 ;
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes thankyou_worldIn{
+   0%{
+        transform: scale(0);
+        opacity:0 ;
+    }
+    100%{
+        opacity:1 ;
+        transform: scale(1);
+    }
+}
+//白色字出场
+@keyframes thankyou_worldOut{
+   0%{
+    }
+    100%{
+        opacity:0;
+        transform: translateY(36/@r);
+    }
+}
+@-webkit-keyframes thankyou_worldOut{
+     0%{
+    }
+    100%{
+        opacity:0;
+        -webkit-transform: translateY(36/@r);
+    }
+}
+//塔入场
+@keyframes towerIn{
+     0%{
+         
+         transform: translateY(1000/@r);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes towerIn{
+     0%{
+         
+         -webkit-transform: translateY(1000/@r);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+//塔出场
+//...
+
+
+//火箭入场
+@keyframes rocket_2In{
+     0%{
+         opacity: 0;
+         transform: translateY(1000/@r);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes rocket_2In{
+     0%{
+         opacity: 0;
+         -webkit-transform: translateY(1000/@r);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+//火箭出场
+//...
+
+
+//曾经字入场
+@keyframes miss_worldIn{
+     0%{
+         opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+@-webkit-keyframes miss_worldIn{
+     0%{
+         opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+//曾经字出场
+@keyframes miss_worldOut{
+     0%{
+         opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+@-webkit-keyframes miss_worldOut{
+     0%{
+         opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+//第二版入场
+@-webkit-keyframes page2In{
+     0%{
+         
+//       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+@keyframes page2In{
+     0%{
+         
+//       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+//第二版出场
+@keyframes page2Out{
+    0%{
+         opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+@-webkit-keyframes page2Out{
+    0%{
+         opacity: 1;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+//雪花地面入场
+@keyframes snowIn{
+    0%{
+         opacity: 0;
+         transform: translateY(500/@r);
+    }
+    100%{
+       opacity: 1;
+       transform: translateY(0/@r);
+    }
+}
+@-webkit-keyframes snowIn{
+    0%{
+         opacity: 0;
+         -webkit-transform: translateY(500/@r);
+    }
+    100%{
+       opacity: 1;
+       -webkit-transform: translateY(0/@r);
+    }
+}
+//雪花出场
+@-webkit-keyframes snowOut{
+    0%{
+        -webkit-transform: translateY(0/@r);
+         opacity: 1;
+    }
+    100%{
+       opacity: 1;
+       -webkit-transform: translateY(500/@r);
+    }
+}
+@keyframes snowOut{
+    0%{
+         transform: translateY(0/@r);
+         opacity: 1;
+    }
+    100%{
+        opacity: 1;
+       transform: translateY(500/@r);
+    }
+}
+@keyframes bg2_ballsIn{
+    0%{
+         opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes bg2_ballsOut{
+    0%{
+         opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

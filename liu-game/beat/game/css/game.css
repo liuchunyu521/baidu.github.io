@@ -1,0 +1,345 @@
+body {
+  background-color: #2c3f7e;
+  overflow: hidden;
+}
+.page3 {
+  background-color: #2d4081 ;
+  z-index: 1;
+  overflow: hidden;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.bg3_cercle {
+  width: 10.75rem;
+  height: 10.75rem;
+  position: absolute;
+  background-color: #233264;
+  left: 2.625rem;
+  bottom: 7rem;
+  border-radius: 5.4rem;
+  border: 1px solid #1c2850;
+  box-shadow: 0 0 0 2.825rem #283972, 0 0 0 2.85rem #24366a, 0 0 0 4.825rem #2a3d79, 0 0 0 4.85rem #24366a, 0 0 0 6.35rem #2c3f7e;
+}
+#music,
+#music2 {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.175rem;
+  background-size: cover ;
+  bottom: 0.4rem;
+  right: 0.5rem;
+  z-index: 9999;
+}
+.play {
+  background: url(../img/musicplay.png) no-repeat;
+  animation: music 5s linear infinite;
+  -webkit-animation: music 5s linear infinite;
+}
+.stop {
+  background: url(../img/musicstop.png) no-repeat;
+  animation: none;
+  -webkit-animation: none;
+}
+@keyframes music {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes music {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.foot {
+  width: 100%;
+  height: 1.825rem;
+  background-color: #161f3e;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+.monster_ico {
+  width: 1.5rem;
+  height: 1.4rem;
+  background: url(../img_game/manster4.png) no-repeat;
+  background-size: cover ;
+  position: absolute;
+  left: 0.55rem;
+  top: 0.425rem;
+}
+.num_monster {
+  width: 2.5rem;
+  height: 0.6rem;
+  color: #55b9f8;
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  left: 2.25rem;
+  position: absolute;
+  top: 0.85rem;
+}
+.num_monster_2 {
+  width: 2.5rem;
+  height: 0.6rem;
+  color: #55b9f8;
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  left: 2.7rem;
+  position: absolute;
+  top: 0.85rem;
+}
+.rest_time_ico {
+  width: 1rem;
+  height: 1.125rem;
+  background: url(../img_game/time_ico.png) no-repeat;
+  background-size: cover ;
+  position: absolute;
+  top: 0.4rem;
+  left: 4.5rem;
+}
+.num_rest_time,
+.num_rest_times,
+.num_customs {
+  width: 0.9rem;
+  height: 1rem;
+  background-size: cover ;
+  position: absolute;
+  left: 6.25rem;
+  top: 0.75rem;
+  color: #ffe400;
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+.num_rest_times {
+  left: 7.5rem;
+}
+.num_customs {
+  width: 2.5rem;
+  left: 9rem;
+  color: #d3da56;
+  letter-spacing: 0.075rem;
+}
+#can {
+  z-index: 98;
+  position: absolute;
+}
+.shake {
+  animation: no_touch 0.1s linear;
+  -webkit-animation: no_touch 0.1s linear;
+}
+@keyframes no_touch {
+  0% {
+    transform: translateX(-40px);
+  }
+  10% {
+    transform: translateY(-40px);
+  }
+  20% {
+    transform: translateY(30px);
+  }
+  30% {
+    transform: translateX(40px);
+  }
+  40% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateX(40px);
+  }
+  90% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes no_touch {
+  0% {
+    -webkit-transform: translateX(-40px);
+  }
+  10% {
+    -webkit-transform: translateY(-40px);
+  }
+  20% {
+    -webkit-transform: translateY(30px);
+  }
+  30% {
+    -webkit-transform: translateX(40px);
+  }
+  40% {
+    -webkit-transform: translateX(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+  }
+  60% {
+    -webkit-transform: translateY(20px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+  }
+  80% {
+    -webkit-transform: translateX(40px);
+  }
+  90% {
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+#pop {
+  width: 10.5rem;
+  height: 11.95rem;
+  background-image: url(../img_game/begin_game.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 100;
+  left: 2.7rem;
+  top: -12rem;
+  transition: 1s;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+#pop2 {
+  width: 10.5rem;
+  height: 13.5rem;
+  background-image: url(../img_game/begin_game.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 100;
+  left: 2.7rem;
+  top: -13.5rem;
+  transition: 1s;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+#begin_game_buttom,
+.begin_game_buttom {
+  width: 6.55rem;
+  height: 1.575rem;
+  border: 0.05rem solid #c5212d;
+  position: absolute;
+  background-color: white;
+  left: 1.95rem;
+  bottom: 1.5rem;
+  color: #ec636d;
+  font-size: 0.75rem;
+  line-height: 1.575rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+.play_way {
+  width: 8.35rem;
+  height: 2.85rem;
+  font-size: 0.65rem;
+  color: #fef8c2;
+  position: absolute;
+  left: 1.45rem;
+  bottom: 3.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.play_way2 {
+  width: 8.35rem;
+  height: 3.1rem;
+  font-size: 0.65rem;
+  color: #fef8c2;
+  position: absolute;
+  left: 1.45rem;
+  top: 6rem;
+  line-height: 1rem;
+  text-align: center;
+}
+@keyframes beginGame {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes beginGame {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@keyframes removeBeginGame {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes removeBeginGame {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.another {
+  bottom: 0.5rem;
+}
+.bac_to_begin {
+  bottom: 2.5rem;
+}
+.jindu_box {
+  position: absolute;
+  width: 11.5rem;
+  height: 0.65rem;
+  background-color: #243367 ;
+  border: 0.075rem solid #4091dc;
+  bottom: 3rem;
+  left: 2.25rem;
+  border-radius: 0.325rem;
+  overflow: hidden;
+  z-index: 99;
+}
+.jindu_box #inner_jindu {
+  width: 0;
+  height: 100%;
+  background-color: #4091dc;
+}
+#worl_inner_jindu {
+  height: 0.75rem;
+  font-size: 0.5rem;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  color: white;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  font-weight: bold;
+}
