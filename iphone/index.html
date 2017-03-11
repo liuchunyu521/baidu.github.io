@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			
+			#ul1 {
+				margin: 0 auto;
+				width: 808px;
+				border: 1px solid green;
+			}
+			ul,li {
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			.clearfix:after {
+				display:block;
+				content: "";
+				clear: both;
+			}
+			#ul1 li {
+				width: 200px;
+				height: 300px;
+				border: 1px solid red;
+				background-color: gainsboro;
+				float: left;
+			}
+			#header {
+				width: 800px;
+				margin: 0 auto;
+				padding: 20px 0px;
+				text-align: center;
+			}
+			#ul1 li img {
+				width: 200px;
+				height: 200px;
+			}
+			#ul1 li span {
+				margin-left:50px ;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<input type="button" name="" id="btn" value="搜索" />
+		</div>
+		<ul id="ul1" class="clearfix">
+			<!--<li>
+				<img src=""/>
+				<span>金立</span>
+				<span>￥333</span>
+			</li>-->
+			
+		</ul>
+		<script src="ajax.js"></script>
+		<script type="text/javascript">
+			
+			var btn=document.getElementById("btn");
+			var ul1=document.getElementById("ul1");
+			btn.onclick=function (){
+				ajax('get','datazibian.js','',function(data){
+					var data=JSON.parse(data);
+//					console.log(data.shouji[0].pic);
+					
+					
+					for (var i=0;i<data.shouji.length;i++) {
+						var oli=document.createElement('li');
+						var oimg=document.createElement('img');
+						oimg.src=data.shouji[i].pic;
+						oli.appendChild(oimg);
+						var span1=document.createElement('span');
+						span1.innerHTML=data.shouji[i].ipone;
+						oli.appendChild(span1);
+						
+						var span2=document.createElement('span');
+						span2.innerHTML=data.shouji[i].money;
+
+						oli.appendChild(span2);
+						ul1.appendChild(oli);
+					}
+					
+				})
+				
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>
