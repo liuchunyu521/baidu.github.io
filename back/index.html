@@ -13,11 +13,12 @@
 				height: 100%;
 				background: #fff;
 				text-align: center;
+				overflow: hidden;
 			}
 			body {
 				margin: 0;
 				background: #ddd;
-				overflow: hidden;
+				
 			}
 			.page{
 				width: 100%;
@@ -35,12 +36,14 @@
 		<div class="wrap">
 			<header style="height: 80px;background: cornflowerblue;line-height: 80px;"><button class="back1">back</button>我是主页面</header>
 			<div>我是内容</div>
+			
+			<div class="page">
+				<header style="height: 80px;background: bisque;line-height: 80px;"><button class="back">back</button>我是分页</header>
+				<div>我是内容</div>
+			</div>
 		</div>
 		
-		<div class="page">
-			<header style="height: 80px;background: bisque;line-height: 80px;"><button class="back">back</button>我是分页</header>
-			<div>我是内容</div>
-		</div>
+		
 		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			var srw=window.innerWidth
