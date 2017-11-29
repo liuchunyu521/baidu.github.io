@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.tkwrap {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				background:#000;
+				filter: alpha(opacity=50);
+				-moz-opacity:0.5;
+				opacity: 0.5;
+				transition: 0.1s;
+				display: none;
+			}
+			.tkcontent {
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin:-100px 0 0 -200px;
+				width:400px;
+				/*height:200px;*/
+				background: #fff;
+				border:1px solid #ddd;
+			}
+			.tktittle{
+				height: 80px;
+				text-align: center;
+				line-height: 80px;
+				border-bottom: 1px solid #ddd;
+				font-family: "微软雅黑";
+			}
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.tkleft,.tkright {
+				float: left;
+				width: 48%;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				font-family: "微软雅黑";
+				cursor: pointer;
+			}
+			.tkright {
+				width: 50%;
+				border-left: 1px solid #ddd;
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tkwrap">
+			<div class="tkcontent">
+				<div class="tktittle">
+					您输入的证件号已存在注册账号，继续投保？您输入的证件号已存在注册账号，继续投保？
+				</div>
+				<div class="clearfix">
+					<span class="tkleft">取消</span>
+					<span class="tkright">证件号码登录</span>
+				</div>
+			</div>
+			
+		</div>
+		
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			//初始弹框显示隐藏   
+			$('.tkwrap').show();
+			
+			//点击取消按钮
+			$(".tkleft").on("click",function(){
+				$('.tkwrap').hide();
+			});
+			
+			//点击证件登录按钮
+			$(".tkright").on("click",function(){
+				
+				//程序操作，点击登录按钮跳转或其他操作将弹框隐藏；
+				$('.tkwrap').hide();
+				
+			});
+			
+		</script>
+	</body>
+</html>

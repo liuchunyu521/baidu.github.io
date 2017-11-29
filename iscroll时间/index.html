@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="iscroll.css"/>
+	</head>
+	<body>
+		<div class="fr">
+			<input name="start" type="text" class="scroller-date start" readonly="" placeholder="请选择开始时间(必填项)">
+		</div>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$('.scroller-date').scroller('destroy').scroller({
+				preset : 'datetime',
+				theme : "ios7",
+				mode : "scroller",
+				display : "bottom",
+				defaultValue:new Date("2017/11/11 11:11")
+			});
+			
+			
+			window.localStorage.setItem('datetimeh','14')
+			window.localStorage.setItem('datetimem','20')
+		</script>
+		
+	</body>
+</html>

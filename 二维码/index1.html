@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://localhost:21480/Admin/Plugins/QRCode -->
+<html>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>二维码生成</title>
+    <!--<link type="text/css" href="bootstrap.min.css" rel="stylesheet">-->       
+    <script src="jquery.js"></script>
+</head>
+<body class="indexbody">
+		
+		<!--表单-->
+		<div class="panel panel-sm">
+			<form action="" class="form-horizontal panel-body" id="form1" method="post">
+				<div class="tab-content" style="padding-top: 15px;">
+					<div role="tabpanel" class="tab-pane fade in active" id="pane1" aria-labelledby="tab1">
+						<div class="form-group form-group-sm">
+							<label class="control-label col-md-2">二维码内容</label>
+							<div class="col-md-10">
+								<textarea name="txtContent" id="txtContent" rows="2" class="form-control input-normal" placeholder="http://www.17sucai.com"></textarea>
+							</div>
+						</div>
+						<div id="qrcode"></div>
+					</div>
+				</div>
+				<hr class="sm">
+				<div class="btn-footer">
+					<button name="btnCreate" class="btn btn-success" type="button" onClick="f_onCreateQrcode();" title="将根据您填写的内容生成二维码图像">开始生成</button>
+					<button name="btnClear" class="btn btn-default" type="button" onClick="f_onClearQrcode();" title="清除">清除</button>
+				</div>
+			</form>    
+		</div>
+	<script src="pako.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="qrcode.min.js.js"></script>
+    <script type="text/javascript">
+        //二维码内容
+        var txtContent = document.getElementById("txtContent");
+
+        // 设置 qrcode 参数
+        
+        var qrcode = new QRCode('qrcode', {
+            text: '',
+            width: 256,
+            height: 256,
+            colorDark: '#000000',
+            colorLight: '#ffffff',
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        //生成二维码图像
+        
+       
+        function f_onCreateQrcode() {
+        	 var str=txtContent.value;
+        	 var binaryString = pako.deflate(JSON.stringify(str), { to: 'string' });
+        	 
+            if (!txtContent) {
+                return false;
+            } else {
+                qrcode.clear();
+                qrcode.makeCode(binaryString);
+            }
+        }
+
+        
+    </script>
+
+</body>
+</html>	

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.tkrtwrap {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				background:#000;
+				filter: alpha(opacity=50);
+				-moz-opacity:0.5;
+				opacity: 0.5;
+				display: none;
+			}
+			.tkrtcontent {
+				position:absolute;
+				top:30%;
+				left:50%;
+				margin:-100px 0 0 -300px;
+				width:600px;
+				/*height:200px;*/
+				background: #fff;
+				border:1px solid #ddd;
+			}
+			.tkrttittle{
+				height: 60px;
+				text-align: left;
+				text-indent: 20px;
+				line-height: 60px;
+				border-bottom: 1px solid #ddd;
+				font-family: "微软雅黑";
+				position: relative;
+			}
+			
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			
+			.thrtwrap {
+				padding: 20px;
+			}
+			h4 {
+				margin: 0px;
+			}
+			.thrts {
+				margin-bottom: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tkrtwrap"></div>
+		<div class="tkrtcontent">
+			<div class="tkrttittle">
+				<!--<span style="font-family: '微软雅黑';font-weight: bold;">安全验证？</span>-->
+				<span class='tkrtquxiao' style="position: absolute;right: 15px;cursor: pointer;">X</span>
+			</div>
+			<div class="thrtwrap">
+				<div class="thrts">
+					<h4>我为什么会提示"已存在另一个注册账号"？</h4>
+					<div>目前，平台约定同一身份证号仅能和一个泰康在线注册会员账号，以相同证件号码作为投保人投保时，会出现身份证被占用的提示:</div>
+				</div>
+				<div class="thrts">
+					<h4>我为什么会提示"已存在另一个注册账号"？</h4>
+					<div>目前，平台约定同一身份证号仅能和一个泰康在线注册会员账号，以相同证件号码作为投保人投保时，会出现身份证被占用的提示:</div>
+				</div>
+				<div class="thrts">
+					<h4>我为什么会提示"已存在另一个注册账号"？</h4>
+					<div>目前，平台约定同一身份证号仅能和一个泰康在线注册会员账号，以相同证件号码作为投保人投保时，会出现身份证被占用的提示:</div>
+				</div>
+				<div class="thrts">
+					<h4>我为什么会提示"已存在另一个注册账号"？</h4>
+					<div>目前，平台约定同一身份证号仅能和一个泰康在线注册会员账号，以相同证件号码作为投保人投保时，会出现身份证被占用的提示:</div>
+				</div>
+			</div>
+		</div>
+			
+		
+		
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			//初始弹框显示隐藏   
+			$('.tkrtwrap').show();
+			$('.tkrtcontent').show();
+			//点击左侧按钮
+			$(".tkrtquxiao").on("click",function(){
+				$('.tkrtcontent').hide();
+				$('.tkrtwrap').hide();
+			});
+			
+			
+			
+		</script>
+	</body>
+</html>

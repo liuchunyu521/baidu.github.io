@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="jquery-weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="weui.min.css"/>
+	</head>
+	<body>
+		<div><input type="text" id='mobile'/></div>
+		<div><input type="text" id='mobile1'/></div>
+		
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="city-picker.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<script>
+		var data=[
+			    {
+			      title: "iPhone1",
+			      value: "1",
+			    },{
+			      title: "iPhone2",
+			      value: "2",
+			    }
+			    
+			  ];
+			  
+			  var data2=[
+			    {
+			      title: "iPhone31",
+			      value: "3",
+			    },{
+			      title: "iPhone32",
+			      value: "4",
+			    },{
+			      title: "iPhone33",
+			      value: "6",
+			    }
+			    
+			  ];
+			
+			
+		 $("#mobile").select({
+			  title: "选择手机",
+			  items: data,
+			  onChange:function(res){//
+			  	if(res.values==1){
+			  		var data1=[];
+			  		data1=data2
+			  		$("#mobile1").select({
+					  items: data1
+					});
+			  	}else {
+			  		var data1=[];
+			  		data1=data
+			  		$("#mobile1").select({
+					  items: data1
+					});
+			  	}
+			  	
+			  	
+			  }
+			});
+			
+		
+		
+			
+			
+		</script>
+	</body>
+</html>

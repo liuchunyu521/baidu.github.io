@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d979667745c46caf6cb772d177113ce5"></script>-->
+		<!--<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=6794a4812dbe66b2a97a541fece80d4c"></script>-->
+		
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.0&key=d979667745c46caf6cb772d177113ce5"></script>
+	
+	
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			
+		AMap.plugin('AMap.Geolocation', function() {
+			var geolocation = new AMap.Geolocation({
+				enableHighAccuracy : false//是否使用高精度定位，默认:true
+				
+			});
+			geolocation.getCurrentPosition();
+			AMap.event.addListener(geolocation, 'complete', onComplete);
+			//返回定位信息
+			AMap.event.addListener(geolocation, 'error', onError);
+			//返回定位出错信息
+		});
+		
+		function onComplete(data) {
+			alert(JSON.stringify(data))
+		}
+		
+		function onError(data) {
+			alert(JSON.stringify(data))
+		}
+		
+		</script>
+	</body>
+</html>
