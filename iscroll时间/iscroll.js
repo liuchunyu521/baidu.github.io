@@ -1553,6 +1553,7 @@
 			t.closest(".dwwl").removeClass("dwa")
 		}
 		function scroll(t, index, val, time, active) {
+			
 			var px = -val * itemHeight, style = t[0].style;
 			if (px == pixels[index] && iv[index]) {
 				return
@@ -1703,6 +1704,7 @@
 			return ret
 		};
 		that.changeWheel = function(idx, time, manual) {
+
 			if ($markup) {
 				var i = 0, nr = idx.length;
 				$.each(s.wheels, function(j, wg) {
@@ -2701,6 +2703,7 @@
 			})
 		}
 		function genWheels() {
+			
 			var cont, wheel, wg = 0, values = [], keys = [], w = [ [] ];
 			if (s.group) {
 				$("optgroup", elm).each(function(i) {
