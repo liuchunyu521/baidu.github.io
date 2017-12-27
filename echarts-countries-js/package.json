@@ -1,0 +1,93 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "echarts-countries-js",
+        "scope": null,
+        "escapedName": "echarts-countries-js",
+        "name": "echarts-countries-js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "D:\\"
+    ]
+  ],
+  "_from": "echarts-countries-js@latest",
+  "_id": "echarts-countries-js@1.0.2",
+  "_inCache": true,
+  "_location": "/echarts-countries-js",
+  "_nodeVersion": "8.4.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/echarts-countries-js-1.0.2.tgz_1506295035449_0.1169892989564687"
+  },
+  "_npmUser": {
+    "name": "chfw",
+    "email": "wangc_2011@hotmail.com"
+  },
+  "_npmVersion": "5.4.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "echarts-countries-js",
+    "scope": null,
+    "escapedName": "echarts-countries-js",
+    "name": "echarts-countries-js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/echarts-countries-js/-/echarts-countries-js-1.0.2.tgz",
+  "_shasum": "a85175ba1575124aad9fc877253b65af5aaae1e6",
+  "_shrinkwrap": null,
+  "_spec": "echarts-countries-js",
+  "_where": "D:\\",
+  "author": {
+    "name": "C.W."
+  },
+  "bugs": {
+    "url": "https://github.com/chfw/echarts-countries-js/issues"
+  },
+  "dependencies": {},
+  "description": "Packages all countries for front end developers",
+  "devDependencies": {
+    "echarts-mapmaker": "^1.0.2",
+    "glob": "^7.1.2",
+    "gulp": "^3.9.1",
+    "pug": "^2.0.0-rc.4",
+    "swig": "^1.4.2"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-FrbzPj+0vR6RLS1+vqKcHT6MGcq1ity5vUjpxqiSAPZYvI2fiquEpsUVFO8DPKr1tChTPKiiBXOIRH9x57xyhg==",
+    "shasum": "a85175ba1575124aad9fc877253b65af5aaae1e6",
+    "tarball": "https://registry.npmjs.org/echarts-countries-js/-/echarts-countries-js-1.0.2.tgz"
+  },
+  "gitHead": "548fca13b00ae59e13ad84870a05ca84a9e5a163",
+  "homepage": "https://github.com/chfw/echarts-countries-js#readme",
+  "keywords": [
+    "echarts"
+  ],
+  "license": "ISC",
+  "main": "main.js",
+  "maintainers": [
+    {
+      "name": "chfw",
+      "email": "wangc_2011@hotmail.com"
+    }
+  ],
+  "name": "echarts-countries-js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chfw/echarts-countries-js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}
