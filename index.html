@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+//			var myDate=new Date();
+//			var date=datefun(myDate);
+//			function datefun(myDate) {
+//		        var y = myDate.getFullYear();  
+//		        var m = myDate.getMonth() + 1;  
+//		        m = m < 10 ? '0' + m : m;  
+//		        var d = myDate.getDate();  
+//		        d = d < 10 ? ('0' + d) : d;  
+//		        return y + '-' + m + '-' + d;  
+//		    };  
+//		    var year = datefun(myDate).substring(0,4);
+//		    alert(year)
+//		    alert(myDate.getMonth())
+
+			var myDate=new Date();
+			var b=myDate.toLocaleDateString();
+			var a=b.substring(0,4);
+			alert(a)
+		</script>
+	</body>
+</html>
