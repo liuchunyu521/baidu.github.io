@@ -1,0 +1,47 @@
+{
+	"sucess":"1",
+	"userid":"yuangong",
+	"navdata":[
+		{
+			"id": "E90101", 
+			"icon": "iconfont icon-renshihangzhengshi",
+			"text": "人事信息", 
+			"children": [{
+				"id": "E9010101",  
+				"text": "我的信息",
+				"url": "/Information"
+				},{
+				"id": "1.2",  
+				"text": "员工信息",
+				"url": "/Employeelist"
+				}]
+		},{
+			"id": "3", 
+			"icon": "iconfont icon-iconfontyunyingpingtai09",
+			"text": "消息中心", 
+			"children": [{
+				"id": "3.1",  
+				"text": "通知消息",
+				"url": "/Informmessagelist"
+				},{
+				"id": "3.2",  
+				"text": "待办消息",
+				"url": "/Handlemessagelist"
+				},{
+				"id": "3.3",  
+				"text": "预警消息",
+				"url": "/Warningmessagelist"
+			}]
+		},{
+			"id": "4", 
+			"icon": "iconfont icon-xinzi",
+			"text": "我的薪资", 
+			"children": [{
+				"id": "4.1",  
+				"text": "薪资查询",
+				"url": "/Mysalary"
+			}]
+		}
+		
+	]
+}
