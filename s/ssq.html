@@ -18,6 +18,8 @@
 	</head>
 	<body style="text-align: center;">
 		<div id="app">
+			<div style="color: blue;font-size: 3em;">双色球第2018084期参选数据</div>
+			<div style="color: blue;font-size: 2em;margin-bottom: 20px;">开奖时间：2018-07-22 21:15:00</div>
 			<div v-for="item in data1">
 				<span class="ddd" v-for="(value,index) in item.name"><span v-if="index<item.name.length-1">{{value}}</span><span class="blue" v-else>{{value}}</span></span>
 			</div>
