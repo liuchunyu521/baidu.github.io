@@ -1,0 +1,15 @@
+现在在学react-native，需要用模拟器，但是每次打开模拟器都要先打开android studio再打开模拟器才行，偷懒，找了一下启动的命令：
+
+D:\Android\sdk\tools\emulator.exe -netdelay none -netspeed full -avd Nexus_5X_API_19
+
+    
+D:\Android\sdk\是你的安装sdk的目录
+
+    
+
+Nexus_5X_API_19是我的模拟器的名称，具体名称，可以打开android studio查看
+
+
+把弄好的命令放到.bat文件里面就好啦~
+
+原文：https://blog.csdn.net/foreverilu/article/details/51874074 
