@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vue.js计算器</title>
+
+<style>
+body {
+  background: linear-gradient(to right, #85D8CE, #085078);
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-item: center;
+}
+
+.calculator {
+  width: 440px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-size: 16px;
+  background-color: #333333;
+}
+
+.input {
+  width: 420px;
+  height: 50px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: #333333;
+  color: #d9d9d9;
+  padding: 0 5px 0 5px;
+  margin: 0 0px 10px 0px;
+  font-size: 30px;
+}
+
+.input:focus,
+.input:active {
+  border-color: #03a9f4;
+  box-shadow: 0 0 4px #03A9F4;
+  outline: none 0;
+}
+
+.button {
+  margin: 3px;
+  width: 63px;
+  border: 1px solid #0d0d0d;
+  height: 30px;
+  border-radius: 4px;
+  color: #d9d9d9;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  outline: none;
+}
+
+.mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.equal-sign {
+  background-color: green;
+  width: 133px;
+}
+
+.toggle-button {
+  border: none;
+  background-color: #333333;
+  cursor: pointer;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+p {
+  margin-top: 0;
+}
+
+button::-moz-focus-inner {
+  border-color: transparent;
+}
+</style>
+</head>
+<body>
+
+<script src="vue.js"></script>
+
+<div id="app">
+  <div class="calculator">
+    <button @click="changeModeEvent" class="toggle-button">
+
+===
+    </button>
+    <div class="results">
+      <input class="input" v-model="current" />
+    </div>
+    <div class="mode" >
+      
+      <button class="button equal-sign" @click="press">=</button>  
+    </div>
+    
+  </div>
+</div>
+
+<script>
+let app = new Vue({
+  el: '#app',
+  data () {
+    return{ 
+      current: '(5+6)*8',
+      changeMode: true
+    }
+  },
+  mounted(){
+  	var str="ZD3+ZD4+(ZD5-ZD2)"
+  	if(new RegExp("ZD3").test(str)==true){
+  		str=str.replace('ZD3','3')
+  	}
+  	console.log(str)
+  	
+  	
+  },
+  methods: {
+    press: function (event) {
+
+      let me = this
+      let key = event.target.textContent
+
+      
+        
+    
+      
+      
+    },
+    changeModeEvent: function() {
+    	
+//    let me = this
+				var current;
+				var ZD1=3;
+				var ZD3=9;
+				var ZD4=4;
+				
+				var total='ZD1-(ZD3/ZD4)/ZD1+ZD3*ZD4';
+				var json=JSON.parse(JSON.stringify(total))
+				json=eval(json)
+				console.log(json)
+	     
+    }
+  }
+})</script>
+
+</body>
+</html>

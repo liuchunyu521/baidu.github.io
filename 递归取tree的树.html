@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="table"
+    content="layout use table element" />
+    <title>table布局</title>
+  </head>
+  <body marginwidth="0px" marginheight="0px">
+			
+
+  </body>
+<script type="text/javascript">
+/** 
+ * json格式转树状结构 
+ * @param   {json}      json数据 
+ * @param   {String}    id的字符串 
+ * @param   {String}    父id的字符串 
+ * @param   {String}    children的字符串 
+ * @return  {Array}     数组 
+ */  
+		var array=[{
+		id: 8905,
+		code: "0-6-1-1",
+		name: "调剂金方案配置",
+		url: "/projectconfigMgt/adjustGoldconfigMgt",
+		order: null,
+		parent: {
+			id: 8904,
+			code: "0-6-1",
+			name: "调剂金方案配置",
+			url: "/projectconfigMgt/adjustGoldconfigMgtlist",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8908,
+		code: "0-6-2-1",
+		name: "用款计划方案配置",
+		url: "/projectconfigMgt/expensesPlanconfig",
+		order: null,
+		parent: {
+			id: 8907,
+			code: "0-6-2",
+			name: "用款计划方案配置",
+			url: "/projectconfigMgt/expensesPlanconfig",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8906,
+		code: "0-6-1-2",
+		name: "调剂金方案详细页面",
+		url: "/projectconfigMgt/adjustGoldconfigDetails",
+		order: null,
+		parent: {
+			id: 8904,
+			code: "0-6-1",
+			name: "调剂金方案配置",
+			url: "/projectconfigMgt/adjustGoldconfigMgtlist",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8907,
+		code: "0-6-2",
+		name: "用款计划方案配置",
+		url: "/projectconfigMgt/expensesPlanconfig",
+		order: null,
+		parent: {
+			id: 8901,
+			code: "0-6",
+			name: "方案配置管理",
+			url: "/projectconfigMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8909,
+		code: "0-6-2-2",
+		name: "用款计划方案详细页面",
+		url: "/projectconfigMgt/expensesPlanconfigDetails",
+		order: null,
+		parent: {
+			id: 8907,
+			code: "0-6-2",
+			name: "用款计划方案配置",
+			url: "/projectconfigMgt/expensesPlanconfig",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8910,
+		code: "0-6-3",
+		name: "资金账户监控配置",
+		url: "/projectconfigMgt/accountGoldcontrolConfig",
+		order: null,
+		parent: {
+			id: 8901,
+			code: "0-6",
+			name: "方案配置管理",
+			url: "/projectconfigMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8911,
+		code: "0-6-3-1",
+		name: "资金账户监控配置",
+		url: "/projectconfigMgt/accountGoldcontrolConfig",
+		order: null,
+		parent: {
+			id: 8910,
+			code: "0-6-3",
+			name: "资金账户监控配置",
+			url: "/projectconfigMgt/accountGoldcontrolConfig",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8912,
+		code: "0-6-3-2",
+		name: "资金监护详细",
+		url: "/projectconfigMgt/accountGoldcontrolDetails",
+		order: null,
+		parent: {
+			id: 8910,
+			code: "0-6-3",
+			name: "资金账户监控配置",
+			url: "/projectconfigMgt/accountGoldcontrolConfig",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8913,
+		code: "0-2",
+		name: "调剂金管理",
+		url: "/adjustGoldMgt",
+		order: 2,
+		parent: null,
+		enabled: true
+	},
+	{
+		id: 8914,
+		code: "0-2-1",
+		name: "调剂金制单",
+		url: "/adjustGoldMgt/adjustMakeBillslist",
+		order: 2,
+		parent: {
+			id: 8913,
+			code: "0-2",
+			name: "调剂金管理",
+			url: "/adjustGoldMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8915,
+		code: "0-2-1-1",
+		name: "调剂金制单",
+		url: "/adjustGoldMgt/adjustMakeBills",
+		order: null,
+		parent: {
+			id: 8914,
+			code: "0-2-1",
+			name: "调剂金制单",
+			url: "/adjustGoldMgt/adjustMakeBillslist",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8916,
+		code: "0-2-1-2",
+		name: "调剂金制单详细",
+		url: "/adjustGoldMgt/adjustMakeDetails",
+		order: null,
+		parent: {
+			id: 8914,
+			code: "0-2-1",
+			name: "调剂金制单",
+			url: "/adjustGoldMgt/adjustMakeBillslist",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8904,
+		code: "0-6-1",
+		name: "调剂金方案配置",
+		url: "/projectconfigMgt/adjustGoldconfigMgtlist",
+		order: null,
+		parent: {
+			id: 8901,
+			code: "0-6",
+			name: "方案配置管理",
+			url: "/projectconfigMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8901,
+		code: "0-6",
+		name: "方案配置管理",
+		url: "/projectconfigMgt",
+		order: 1,
+		parent: null,
+		enabled: true
+	},
+	{
+		id: 8917,
+		code: "0-2-2",
+		name: "调剂金审核",
+		url: "/adjustGoldMgt/adjustMakeBillsMgt",
+		order: 1,
+		parent: {
+			id: 8913,
+			code: "0-2",
+			name: "调剂金管理",
+			url: "/adjustGoldMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8918,
+		code: "0-2-2-1",
+		name: "调剂金审核",
+		url: "/adjustGoldMgt/adjustApprove",
+		order: 2,
+		parent: {
+			id: 8917,
+			code: "0-2-2",
+			name: "调剂金审核",
+			url: "/adjustGoldMgt/adjustMakeBillsMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	},
+	{
+		id: 8919,
+		code: "0-2-2-2",
+		name: "调剂金审核详细",
+		url: "/adjustGoldMgt/adjustApproveDetails",
+		order: 1,
+		parent: {
+			id: 8917,
+			code: "0-2-2",
+			name: "调剂金审核",
+			url: "/adjustGoldMgt/adjustMakeBillsMgt",
+			order: null,
+			enabled: true
+		},
+		enabled: true
+	}
+]
+			//第一步将 parent 等于id 的值；
+			for(var i=0;i<array.length;i++){
+				array[i].icon='dashboard'//图标可换;
+				array[i].path=array[i].url;
+				array[i].invisible=array[i].enabled;
+				delete array[i].url;
+				if(array[i].parent){
+					array[i].parent=array[i].parent.id;
+				}
+			}
+			//打印array
+			console.log(array)
+			
+			//第二部 将没有parent 数据提取出来
+			var noParent=[]
+			
+			for(var j=0;j<array.length;j++){
+				if(!array[j].parent){
+					noParent.push(array[j])
+//					delete array[j];//没有parent 数据删除掉；
+				}
+			}
+			//打印
+			console.log(noParent);
+			//不带parent 的新array;
+			console.log(array);
+			
+			//开始递归重组数据
+			var isChildrenData=[]//带children的新数组
+			
+
+
+function transData(a, idStr, pidStr, chindrenStr){  //处理数据
+    var r = [], 
+	    hash = {}, 
+	    id = idStr, 
+	    pid = pidStr, 
+	    children = chindrenStr, 
+	    i = 0, j = 0, len = a.length;
+    for(; i < len; i++){  
+        hash[a[i][id]] = a[i];  
+    }  
+    for(; j < len; j++){  
+        var aVal = a[j], hashVP = hash[aVal[pid]];  
+        if(hashVP){  
+            !hashVP[children] && (hashVP[children] = []);  
+            hashVP[children].push(aVal);  
+        }else{  
+            r.push(aVal);  
+        }  
+    }  
+    return r;  
+}  
+  
+var jsonData = eval(array);  
+var jsonDataTree = transData(jsonData, 'id', 'parent', 'children');  
+
+		//菜单进行排序
+		
+		getArray(jsonDataTree)
+		console.log(jsonDataTree)
+    function getArray(data){
+    		if(data.length){
+    			//主级排序
+    			data.sort(function(a, b) {
+					    var t1 = a.order*1;
+					    var t2 = b.order*1;
+					    if (t1 > t2) return 1;
+					    else if (t1 < t2) return -1;
+					    else return 0;
+					});
+					//子级的排序
+					for (var i in data) {
+            if (data[i].children) {
+                data[i].children.sort(function(a, b) {
+							    var t1 = a.order*1;
+							    var t2 = b.order*1;
+							    if (t1 > t2) return 1;
+							    else if (t1 < t2) return -1;
+							    else return 0;
+							});
+							getArray(data[i].children)
+            } else {
+                break;
+            }
+        	}
+    		}
+        
+    }
+
+
+			</script>
+
+</html>
