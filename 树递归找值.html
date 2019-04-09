@@ -84,5 +84,36 @@
         }
     }
 
+//往数据里面添加属性和值
+		function iteration(data) {
+            for (var j = 0; j < data.length; j++) {
+                data[j].type = 1
+                if (data[j].chiden != undefined && data[j].chiden.length > 0) {
+                    iteration(data[j].chiden)
+                }
+            }
+        }
+
+        var data = new Array()
+        data[0] = new Object();
+        data[1] = new Object();
+        data[1].name = "chiden1"
+        data[1].chiden = new Array()
+        data[1].chiden[0] = new Object();
+        data[1].chiden[0].name = "chiden2"
+        data[1].chiden[0].chiden = new Array()
+        data[1].chiden[0].chiden[0] = new Object();
+        data[1].chiden[0].chiden[0].name = "chiden3"
+        data[1].chiden[0].chiden[0].chiden = new Array()
+        data[2] = new Object();
+        iteration(data)
+        var newData = data
+        console.log(newData);
+--------------------- 
+作者：留给时间 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_32340877/article/details/79674922 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+		
 	</script>
 </html>
